@@ -243,6 +243,7 @@
       <div class="letter" id="print-area"></div>
       <div class="gen-actions">
         <button class="btn btn-primary" id="g-copy" type="button">📋 Copier le texte</button>
+        <button class="btn btn-ghost" id="g-word" type="button">📄 Word (.doc)</button>
         <button class="btn btn-ghost" id="g-print" type="button">🖨 Imprimer / PDF</button>
         <button class="btn btn-ghost" id="g-dl" type="button">⬇ Télécharger (.txt)</button>
       </div>
@@ -606,6 +607,28 @@
     a.href=URL.createObjectURL(blob);
     a.download='droit-alerte-L2312-59.txt';
     document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  });
+
+  function esc(s){ return s.replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c];}); }
+  $('g-word').addEventListener('click', function(){
+    var t=$('print-area').textContent;
+    var corps = t.split('\n').map(function(l){
+      return l.trim()==='' ? '<p style="margin:0 0 10pt">&nbsp;</p>'
+                           : '<p style="margin:0 0 4pt">'+esc(l)+'</p>';
+    }).join('');
+    var doc = "<html xmlns:o='urn:schemas-microsoft-com:office:office' "
+      + "xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>"
+      + "<head><meta charset='utf-8'><title>Droit d'alerte L2312-59</title>"
+      + "<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View><w:Zoom>100</w:Zoom></w:WordDocument></xml><![endif]-->"
+      + "<style>@page{size:A4;margin:2.5cm}body{font-family:Calibri,Arial,sans-serif;font-size:11pt;color:#000;line-height:1.4}</style>"
+      + "</head><body>"+corps+"</body></html>";
+    var blob=new Blob(['﻿', doc], {type:'application/msword'});
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);
+    a.download='droit-alerte-L2312-59.doc';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    var toast=document.getElementById('toast');
+    if(toast){ toast.textContent='Document Word téléchargé ✓'; toast.classList.add('show'); setTimeout(function(){toast.classList.remove('show');},1800); }
   });
 
   $('g-reset').addEventListener('click', function(){
