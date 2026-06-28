@@ -18,6 +18,7 @@
   <div class="wrap">
     <a class="lg" href="index.html"><img class="mark" src="logo.svg" alt=""> Formation CSE</a>
     <div class="links">
+      <a href="#recherche">Recherche</a>
       <a href="#modules">Les modules</a>
       <a href="#parcours">Le parcours</a>
       <a href="#aide">Mode d'emploi</a>
@@ -42,6 +43,24 @@
 </header>
 
 <main class="wrap">
+
+  <section id="recherche">
+    <div class="sec-head">
+      <div class="sec-ico t-coral"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+      <div><div class="kicker">Recherche</div><h2>Trouvez une réponse par mot-clé</h2></div>
+    </div>
+    <p class="lead">Tapez un mot (ex. « heures de délégation », « budget », « harcèlement », « expertise », « entrave »…). La recherche parcourt toutes les fiches et vous mène directement à la bonne section.</p>
+    <div class="search-box">
+      <div class="field">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input id="q" type="search" autocomplete="off" placeholder="Rechercher un mot-clé dans toute la formation…" aria-label="Rechercher">
+        <button id="sr-clear" class="clear" aria-label="Effacer">✕</button>
+      </div>
+      <div class="sr-meta" id="sr-meta"></div>
+      <div class="sr-results" id="sr-results"></div>
+      <p class="search-hint">Astuce : appuyez sur <b>Entrée</b> pour ouvrir le premier résultat, <b>Échap</b> pour effacer.</p>
+    </div>
+  </section>
 
   <section id="modules">
     <div class="sec-head">
@@ -191,5 +210,6 @@
 <div id="toast"></div>
 <button class="btt" id="btt" aria-label="Revenir en haut">↑</button>
 <script src="app.js"></script>
+<script src="search.js"></script>
 </body>
 </html>
