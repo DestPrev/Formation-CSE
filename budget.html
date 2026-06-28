@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Budgets &amp; ressources — Formation CSE · Destination Prévention</title>
+<link rel="icon" href="logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="progress"></div>
+
+<nav class="bar" id="nav">
+  <div class="wrap">
+    <a class="lg" href="index.html"><img class="mark" src="logo.svg" alt=""> Formation CSE</a>
+    <div class="links">
+      <a href="#deux-budgets">Deux budgets</a>
+      <a href="#fonctionnement">Fonctionnement</a>
+      <a href="#simulateur">Simulateur</a>
+      <a href="#asc">Budget ASC</a>
+      <a href="#comparateur">Comparateur</a>
+      <a href="#depenses">Dépenses</a>
+      <a href="#expertises">Expertises</a>
+      <a href="#juri">Jurisprudence</a>
+      <a href="#regl">Réglementation</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">← Sommaire de la formation</a></div>
+    <div class="logo-wrap"><img src="logo.svg" alt="Destination Prévention" style="width:96px;height:96px"></div>
+    <span class="kick">Module 06 · Fonctionnement</span>
+    <h1>Budgets &amp; <span class="hl">ressources</span></h1>
+    <p class="sub">Les deux budgets du CSE : comment ils sont calculés, ce qu'ils financent, les règles de transfert et le régime des expertises.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="deux-budgets">
+    <div class="sec-head">
+      <div class="sec-ico t-indigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div>
+      <div><div class="kicker">Vue d'ensemble</div><h2>Deux budgets distincts</h2></div>
+    </div>
+    <p class="lead">Le CSE dispose de deux budgets qui ont des objets radicalement différents et doivent être gérés séparément. Leur confusion constitue une faute de gestion.</p>
+    <div class="feat">
+      <div class="f"><div class="fi t-indigo">①</div><div><b>Budget de fonctionnement</b><span>Finance l'activité représentative du CSE : frais de bureau, expertises, formation économique, documentation juridique.</span></div></div>
+      <div class="f"><div class="fi t-teal">②</div><div><b>Budget des activités sociales et culturelles</b><span>Finance les prestations au profit des salariés et de leurs familles : loisirs, chèques vacances, billetterie, aides sociales.</span></div></div>
+      <div class="f"><div class="fi t-coral">⚠</div><div><b>Comptes séparés</b><span>Chaque budget doit faire l'objet d'une comptabilité distincte. Un seul compte bancaire par budget est la règle de bonne gestion.</span></div></div>
+      <div class="f"><div class="fi t-amber">⇄</div><div><b>Transferts encadrés</b><span>Un excédent peut être transféré d'un budget à l'autre dans les limites fixées par décret, et seulement en fin d'exercice.</span></div></div>
+    </div>
+    <div class="note n-warn"><span class="ni">⚠️</span><div><span class="tag">À ne pas confondre</span><p>Financer des activités sociales avec le budget de fonctionnement (ou inversement) constitue un détournement susceptible d'engager la responsabilité civile et pénale des membres du bureau du CSE. Les deux budgets ont leurs propres règles de calcul, leurs propres dépenses autorisées et leur propre régime de report.</p></div></div>
+  </section>
+
+  <section id="fonctionnement">
+    <div class="sec-head">
+      <div class="sec-ico t-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+      <div><div class="kicker">Art. L2315-61</div><h2>Le budget de fonctionnement</h2></div>
+    </div>
+    <p class="lead">C'est la subvention que l'employeur verse chaque année pour couvrir les frais liés à l'exercice des attributions générales du CSE.</p>
+    <span class="chips-law">Texte fondateur</span>
+    <blockquote class="art"><b>Art. <a class="lf" href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036761916" target="_blank" rel="noopener">L2315-61</a></b> — « L'employeur verse au comité social et économique une subvention de fonctionnement d'un montant annuel équivalent à 0,20 % de la masse salariale brute dans les entreprises de cinquante à deux mille salariés, et à 0,22 % de cette masse dans les entreprises de plus de deux mille salariés. »</blockquote>
+    <h3 class="sub">Les taux applicables</h3>
+    <table class="tbl">
+      <thead><tr><th>Effectif de l'entreprise</th><th>Taux</th><th>Assiette</th></tr></thead>
+      <tbody>
+        <tr><td>50 à 2 000 salariés</td><td><b>0,20 %</b></td><td rowspan="2">Masse salariale brute (art. L242-1 CSS)</td></tr>
+        <tr><td>Plus de 2 000 salariés</td><td><b>0,22 %</b></td></tr>
+      </tbody>
+    </table>
+    <h3 class="sub">L'assiette de calcul</h3>
+    <p>L'assiette est constituée de l'ensemble des gains et rémunérations soumis à cotisations de sécurité sociale au sens de l'article L242-1 du Code de la Sécurité sociale. Sont expressément <strong>exclus</strong> :</p>
+    <div class="dd">
+      <div class="col can">
+        <h4>✓ Inclus dans l'assiette</h4>
+        <ul>
+          <li>Salaires bruts, primes, gratifications</li>
+          <li>Avantages en nature</li>
+          <li>Indemnités de congés payés</li>
+          <li>Heures supplémentaires (y compris la majoration)</li>
+        </ul>
+      </div>
+      <div class="col cant">
+        <h4>✕ Exclus de l'assiette</h4>
+        <ul>
+          <li>Indemnités versées à l'occasion de la rupture du CDI (indemnité de licenciement, de départ à la retraite, de rupture conventionnelle)</li>
+          <li>Sommes versées au titre d'un accord d'intéressement ou de participation</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note n-info"><span class="ni">ℹ️</span><div><span class="tag">Versement</span><p>La subvention est versée par l'employeur en une ou plusieurs fois au cours de l'année. En pratique, elle peut être versée mensuellement (masse salariale estimée) ou annuellement en début d'exercice, avec régularisation. Les modalités peuvent être précisées par accord d'entreprise.</p></div></div>
+  </section>
+
+  <section id="simulateur">
+    <div class="sec-head">
+      <div class="sec-ico t-coral"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h2M12 11h2M16 11h0M8 15h2M12 15h2M16 15h0"/></svg></div>
+      <div><div class="kicker">Outil interactif</div><h2>Simulateur du budget de fonctionnement</h2></div>
+    </div>
+    <p class="lead">Renseignez votre masse salariale brute annuelle et votre effectif : le simulateur calcule automatiquement le taux applicable et le montant de la subvention.</p>
+    <div class="calc">
+      <h4>🧮 Calcul du budget de fonctionnement</h4>
+      <label for="sim-masse">Masse salariale brute annuelle (€)</label>
+      <input id="sim-masse" type="text" inputmode="numeric" value="2000000">
+      <label for="sim-eff2" style="margin-top:14px">Effectif de l'entreprise</label>
+      <input id="sim-eff2" type="number" min="50" value="150">
+      <div class="out">
+        <div class="o"><div class="n" id="bud-taux">—</div><div class="l">taux applicable</div></div>
+        <div class="o"><div class="n" id="bud-fct">—</div><div class="l">budget de fonctionnement / an</div></div>
+        <div class="o"><div class="n" id="bud-mois">—</div><div class="l">soit par mois</div></div>
+      </div>
+      <p class="hint">Taux de 0,20 % de la masse salariale brute (50 à 2 000 salariés) ou 0,22 % (plus de 2 000 salariés), art. <a class="lf" href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036761916" target="_blank" rel="noopener" style="color:#bff0f5">L2315-61</a>.</p>
+    </div>
+  </section>
+
+  <section id="asc">
+    <div class="sec-head">
+      <div class="sec-ico t-amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+      <div><div class="kicker">Art. L2312-81</div><h2>Le budget des activités sociales et culturelles</h2></div>
+    </div>
+    <p class="lead">La subvention ASC est destinée exclusivement aux prestations au profit des salariés et de leurs familles : elle ne peut en aucun cas financer les frais de fonctionnement du CSE.</p>
+    <span class="chips-law">Principe de fixation</span>
+    <blockquote class="art"><b>Art. <a class="lf" href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036761976" target="_blank" rel="noopener">L2312-81</a></b> — La contribution de l'employeur aux activités sociales et culturelles est fixée par accord d'entreprise. À défaut d'accord, le rapport de cette contribution à la masse salariale brute ne peut être inférieur au rapport constaté l'année précédente.</blockquote>
+    <div class="feat">
+      <div class="f"><div class="fi t-amber">⊕</div><div><b>Par accord d'entreprise</b><span>La voie normale : un accord fixe librement le taux ou le montant de la contribution ASC.</span></div></div>
+      <div class="f"><div class="fi t-teal">≥</div><div><b>À défaut d'accord : taux plancher</b><span>Le rapport masse ASC / masse salariale ne peut être inférieur à celui de l'exercice précédent (règle du maintien du rapport).</span></div></div>
+      <div class="f"><div class="fi t-green">★</div><div><b>Exemples de dépenses ASC</b><span>Chèques vacances, billetterie cinéma/spectacles, colonies de vacances, aide au logement, prêts aux salariés, arbre de Noël.</span></div></div>
+      <div class="f"><div class="fi t-indigo">⇄</div><div><b>Transfert vers le fonctionnement</b><span>L'excédent du budget ASC peut être transféré vers le budget de fonctionnement, dans la limite fixée par décret.</span></div></div>
+    </div>
+    <div class="note n-ok"><span class="ni">✅</span><div><span class="tag">Transferts entre budgets</span><p>Un transfert d'une partie de l'excédent du budget de fonctionnement vers les ASC est possible (et inversement), dans les limites fixées par décret (<a class="lf" href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043975219" target="_blank" rel="noopener">L2315-63</a>). Ces transferts doivent être votés par délibération du CSE et inscrits en comptabilité.</p></div></div>
+  </section>
+
+  <section id="comparateur">
+    <div class="sec-head">
+      <div class="sec-ico t-indigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></div>
+      <div><div class="kicker">Comparatif</div><h2>Budget de fonctionnement vs Budget ASC</h2></div>
+    </div>
+    <p class="lead">Basculez entre les deux onglets pour comparer les règles applicables à chaque budget.</p>
+    <div class="seg" data-group="budgets">
+      <button data-k="a" class="on">Budget de fonctionnement</button>
+      <button data-k="b">Budget ASC</button>
+    </div>
+    <div class="panel a show" data-group="budgets" data-k="a">
+      <div class="kv"><b>Base légale :</b> <a class="lf" href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036761916" target="_blank" rel="noopener">L2315-61</a></div>
+      <div class="kv"><b>Taux :</b> 0,20 % (50–2 000 sal.) ou 0,22 % (+ de 2 000 sal.) de la masse salariale brute</div>
+      <div class="kv"><b>Objet :</b> Frais de fonctionnement de l'instance, expertises libres, formation économique des élus, documentation, frais de personnel recruté par le CSE</div>
+      <div class="kv"><b>Bénéficiaires :</b> Le CSE en tant qu'institution (non les salariés directement)</div>
+      <div class="kv"><b>Report :</b> L'excédent est reportable d'un exercice sur l'autre ; au-delà du seuil réglementaire, il peut être transféré aux ASC</div>
+      <div class="kv"><b>Comptabilité :</b> Compte bancaire dédié ; tenue obligatoire selon la taille du CSE (simplifiée ou complète)</div>
+    </div>
+    <div class="panel b" data-group="budgets" data-k="b">
+      <div class="kv"><b>Base légale :</b> <a class="lf" href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036761976" target="_blank" rel="noopener">L2312-81</a></div>
+      <div class="kv"><b>Taux :</b> Fixé par accord d'entreprise ; à défaut, au moins égal au rapport constaté l'année précédente</div>
+      <div class="kv"><b>Objet :</b> Activités sociales et culturelles au profit des salariés et de leurs familles : loisirs, aide au logement, chèques vacances, billetterie, soutien scolaire…</div>
+      <div class="kv"><b>Bénéficiaires :</b> Les salariés et, le cas échéant, leurs ayants droit (conjoints, enfants)</div>
+      <div class="kv"><b>Report :</b> L'excédent est reportable ; il peut aussi être transféré vers le budget de fonctionnement dans la limite réglementaire</div>
+      <div class="kv"><b>Comptabilité :</b> Compte bancaire dédié ; présentation des comptes à l'assemblée générale des salariés recommandée pour la transparence</div>
+    </div>
+  </section>
+
+  <section id="depenses">
+    <div class="sec-head">
+      <div class="sec-ico t-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 14l6-6M9.5 8.5a1 1 0 110-2 1 1 0 010 2zm5 5a1 1 0 110-2 1 1 0 010 2zM20 12a8 8 0 11-16 0 8 8 0 0116 0z"/></svg></div>
+      <div><div class="kicker">Gestion courante</div><h2>Les dépenses imputables</h2></div>
+    </div>
+    <p class="lead">Toutes les dépenses liées à l'exercice des attributions du CSE ne sont pas financées de la même manière. Certaines incombent à l'employeur même sans utilisation du budget de fonctionnement.</p>
+    <h3 class="sub">Frais courants de fonctionnement (à la charge du budget CSE)</h3>
+    <div class="feat">
+      <div class="f"><div class="fi t-teal">📂</div><div><b>Fournitures de bureau</b><span>Papeterie, matériel informatique, logiciels utilisés pour l'exercice du mandat.</span></div></div>
+      <div class="f"><div class="fi t-teal">📞</div><div><b>Communications</b><span>Téléphone, accès internet, envois postaux liés à l'activité de l'instance.</span></div></div>
+      <div class="f"><div class="fi t-teal">📚</div><div><b>Documentation</b><span>Ouvrages techniques (ex. manuel de droit du travail), abonnements à des revues juridiques ou sociales, bases de données.</span></div></div>
+      <div class="f"><div class="fi t-teal">📋</div><div><b>Diffusion des procès-verbaux</b><span>Frais de reproduction, d'affichage ou d'envoi des PV de réunions du CSE.</span></div></div>
+      <div class="f"><div class="fi t-indigo">👤</div><div><b>Personnel recruté par le CSE</b><span>Salaires et charges des salariés que le CSE recrute (assistant, juriste, comptable…) pour le faire fonctionner.</span></div></div>
+      <div class="f"><div class="fi t-amber">🎓</div><div><b>Formation économique</b><span>Enseignement, transport, hébergement et restauration des membres titulaires en formation économique. Par délibération, peut financer la formation des DS et représentants de proximité.</span></div></div>
+    </div>
+    <h3 class="sub">Dépenses relevant nécessairement de l'employeur (hors budget CSE)</h3>
+    <div class="note n-info"><span class="ni">ℹ️</span><div><span class="tag">Obligation de l'employeur</span><p>Ces frais sont assumés par l'employeur en dehors du budget de fonctionnement. Le CSE n'a pas à les financer sur sa dotation :</p><ul><li><strong>Frais de déplacement aux réunions du CSE</strong> — convoquées par l'employeur, les réunions engagent sa responsabilité financière pour les déplacements.</li><li><strong>Local aménagé et chauffé</strong> — l'employeur doit mettre à disposition un local convenable, équipé du matériel nécessaire (bureau, chaises, téléphone).</li><li><strong>Prime d'assurance responsabilité civile du CSE</strong> — couvrant l'activité institutionnelle du comité.</li></ul></div></div>
+    <div class="note n-ex"><span class="ni">💡</span><div><span class="tag">Exemple concret</span><p>Un CSE de 200 salariés décide, par délibération, de financer la formation d'un délégué syndical à partir de son budget de fonctionnement. Cette délibération doit être consignée au PV. À l'inverse, les billets de train pour se rendre à la réunion mensuelle convoquée par la DRH sont pris en charge par l'employeur, pas par le budget CSE.</p></div></div>
+  </section>
+
+  <section id="expertises">
+    <div class="sec-head">
+      <div class="sec-ico t-coral"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 21l-4.35-4.35M17 11A6 6 0 115 11a6 6 0 0112 0z"/></svg></div>
+      <div><div class="kicker">Art. L2315-81</div><h2>Les expertises du CSE</h2></div>
+    </div>
+    <p class="lead">Le CSE peut recourir à des experts pour éclairer ses délibérations. Le financement varie selon la nature de l'expertise : libre, cofinancée ou entièrement à la charge de l'employeur.</p>
+    <h3 class="sub">Tableau de prise en charge des expertises</h3>
+    <table class="tbl">
+      <thead><tr><th>Type d'expertise</th><th>Prise en charge</th><th>Exemples</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><b>Expertise libre</b><br><small>(art. <a class="lf" href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036262523" target="_blank" rel="noopener">L2315-81</a>)</small></td>
+          <td><b>100 % CSE</b><br>(budget de fonctionnement)</td>
+          <td>Toute expertise décidée librement par le CSE pour éclairer ses travaux, hors cas cofinancés ou pris en charge à 100 % par l'employeur</td>
+        </tr>
+        <tr>
+          <td><b>Expertise cofinancée</b><br><small>(art. <a class="lf" href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036262523" target="_blank" rel="noopener">L2315-81</a>)</small></td>
+          <td><b>80 % employeur / 20 % CSE</b><br>(budget de fonctionnement)</td>
+          <td>Projet important modifiant les conditions de travail, introduction de nouvelles technologies, OPA, droit d'alerte économique, opération de concentration</td>
+        </tr>
+        <tr>
+          <td><b>Expertise risque grave</b><br><small>(art. <a class="lf" href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036262523" target="_blank" rel="noopener">L2315-81</a>)</small></td>
+          <td><b>100 % employeur</b></td>
+          <td>Risque grave constaté dans l'établissement, maladie professionnelle grave, accident du travail grave</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="note n-warn"><span class="ni">⚠️</span><div><span class="tag">La contribution de 20 % du CSE</span><p>Dans les expertises cofinancées, si le budget de fonctionnement ne dispose pas des ressources suffisantes pour couvrir les 20 %, le CSE peut décider de ne pas recourir à l'expertise. Il ne peut pas imposer à l'employeur de prendre en charge la totalité. La décision de recours à l'expertise doit être votée avant la réalisation des travaux.</p></div></div>
+    <h3 class="sub">La notion de « projet important »</h3>
+    <p>Le recours à l'expertise cofinancée pour un « projet important modifiant les conditions de santé, sécurité ou de travail » est encadré par la jurisprudence, qui précise les critères d'appréciation.</p>
+    <div class="acc">
+      <button>Exemples de projets jugés « importants » par les tribunaux<span class="vp b">Jurisprudence</span><span class="chev">▾</span></button>
+      <div class="body"><div class="inner">
+        <p>Les juridictions reconnaissent le caractère « important » dans les situations suivantes :</p>
+        <ul>
+          <li>Regroupement sur un même site de services auparavant répartis sur plusieurs établissements</li>
+          <li>Déménagement redistribuant significativement les espaces de travail et modifiant l'organisation de la production</li>
+          <li>Changement d'horaires des travailleurs postés (passage d'un régime 2x8 à 3x8 par exemple)</li>
+          <li>Fusion de deux services entraînant une modification des missions et des méthodes de travail</li>
+        </ul>
+        <p>En revanche, une réorganisation purement hiérarchique (changement de rattachement) sans incidence sur les conditions concrètes de travail n'est pas nécessairement qualifiée de projet important.</p>
+      </div></div>
+    </div>
+    <div class="acc">
+      <button>Les conditions pour caractériser un « risque grave »<span class="vp hc">Santé & Sécurité</span><span class="chev">▾</span></button>
+      <div class="body"><div class="inner">
+        <p>Pour justifier une expertise « risque grave » (100 % employeur), trois conditions sont requises :</p>
+        <ul>
+          <li><strong>Réalité :</strong> le risque doit être réel au moment de la délibération du CSE, non simplement hypothétique ou craint pour l'avenir</li>
+          <li><strong>Objectivité :</strong> déduit d'éléments objectifs et concrets (signalement du médecin du travail ou de l'inspection du travail, attestations de salariés, hausse d'indicateurs d'absentéisme ou d'accidents)</li>
+          <li><strong>Gravité :</strong> d'une intensité suffisante pour justifier l'intervention d'un expert externe</li>
+        </ul>
+        <p>La simple crainte des élus ou la survenance d'un seul incident mineur ne suffit pas à caractériser le risque grave.</p>
+      </div></div>
+    </div>
+  </section>
+
+  <section id="juri">
+    <div class="sec-head">
+      <div class="sec-ico t-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M5 7l7-3 7 3M5 7l-2 6h4zM19 7l-2 6h4z"/></svg></div>
+      <div><div class="kicker">Jurisprudence clé</div><h2>Ce que disent les juges</h2></div>
+    </div>
+    <div class="juri">
+      <div class="jt">Cass. soc. — Projet important <span class="jp">Expertise cofinancée</span></div>
+      <p>Le regroupement sur un même site de services répartis dans plusieurs bâtiments, le déménagement redistribuant significativement les espaces de travail ou le changement d'horaires des travailleurs postés constituent des projets importants modifiant les conditions de travail, justifiant le recours à l'expertise cofinancée. Le juge apprécie l'importance du projet au regard de ses effets concrets sur les conditions de travail, et non de son caractère stratégique pour l'entreprise.</p>
+    </div>
+    <div class="juri">
+      <div class="jt">Cass. soc. — Risque grave : exigence d'éléments concrets <span class="jp">Risque grave</span></div>
+      <p>Le risque grave qui justifie une expertise prise en charge à 100 % par l'employeur doit être réel au moment de la délibération du CSE, non simplement hypothétique. Il doit être déduit d'éléments objectifs et concrets : signalement du médecin du travail, de l'inspection du travail, attestations de salariés, hausse des indicateurs d'accidents ou de maladies professionnelles. Une simple inquiétude des élus sans élément objectif ne suffit pas.</p>
+    </div>
+    <div class="juri">
+      <div class="jt">Cass. soc. — Rapport de contribution ASC <span class="jp">Budget ASC</span></div>
+      <p>À défaut d'accord d'entreprise, le rapport de la contribution ASC à la masse salariale brute ne peut être inférieur à celui de l'année précédente. La jurisprudence a précisé que cette règle s'applique même en cas de baisse de la masse salariale : l'employeur ne peut réduire la subvention en valeur absolue si cela conduit à abaisser le rapport.</p>
+    </div>
+  </section>
+
+  <section id="regl">
+    <div class="sec-head">
+      <div class="sec-ico t-indigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h9l3 3v15H6z"/><path d="M9 8h6M9 12h6M9 16h4"/></svg></div>
+      <div><div class="kicker">Réglementation</div><h2>Les textes (Code du travail)</h2></div>
+    </div>
+    <div class="regl">
+      <a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036761916" target="_blank" rel="noopener"><span class="code">L2315-61</span><span>Budget de fonctionnement — taux 0,20 % / 0,22 %</span></a>
+      <a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036761976" target="_blank" rel="noopener"><span class="code">L2312-81</span><span>Budget ASC — fixation par accord ou maintien du rapport</span></a>
+      <a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036262523" target="_blank" rel="noopener"><span class="code">L2315-81</span><span>Expertises — financement (libre / cofinancée / risque grave)</span></a>
+      <a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043975219" target="_blank" rel="noopener"><span class="code">L2315-63</span><span>Transfert des excédents entre budgets — limites décret</span></a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="fmark"><img src="logo.svg" alt="" style="width:42px;height:42px"></div>
+  <p><b>Destination Prévention</b> — Formation CSE : attributions &amp; fonctionnement<br>
+  Une question ? <a href="mailto:mickael@destination-prevention.fr">mickael@destination-prevention.fr</a> · <a href="index.html">Retour au sommaire</a></p>
+  <div class="disc">⚖️ Support pédagogique de synthèse à jour des sources citées. Il ne remplace pas une analyse juridique au cas par cas : un accord d'entreprise ou la convention collective peuvent prévoir des règles plus favorables.</div>
+</footer>
+
+<div id="toast"></div>
+<button class="btt" id="btt" aria-label="Revenir en haut">↑</button>
+<script src="app.js"></script>
+</body>
+</html>
