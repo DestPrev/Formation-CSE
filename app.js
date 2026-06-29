@@ -167,6 +167,6 @@
   if(p===''||p==='index.html') return;
   var a=document.createElement('a');
   a.className='home-fab'; a.href='index.html'; a.setAttribute('aria-label','Retour au sommaire');
-  a.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg><span>Sommaire</span>';
+  a.innerHTML='<i class="fa-solid fa-house"></i><span>Sommaire</span>';
   document.body.appendChild(a);
 })();

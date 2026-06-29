@@ -298,3 +298,9 @@ footer a{color:var(--teal);font-weight:600}
 .home-fab:hover{transform:translateY(-2px);color:#fff;box-shadow:0 16px 34px -10px rgba(10,79,89,.55)}
 .home-fab svg{width:18px;height:18px;flex:none}
 @media(max-width:560px){.home-fab span{display:none}.home-fab{padding:13px;left:16px;bottom:16px}}
+
+/* ===== Icônes FontAwesome ===== */
+.sec-ico i{font-size:22px;line-height:1;color:#fff}
+.mi i{font-size:23px;line-height:1;color:#fff}
+.home-fab i{font-size:15px}
+.lf::after{font-family:inherit}
